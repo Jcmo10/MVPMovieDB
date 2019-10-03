@@ -2,6 +2,7 @@ package com.jcmo.mvpmoviedb.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Result(
     @SerializedName("adult")
@@ -32,4 +33,4 @@ data class Result(
     val voteAverage: Double,
     @SerializedName("vote_count")
     val voteCount: Int
-)
+):Serializable
